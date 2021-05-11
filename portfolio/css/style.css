@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-family: 'Montserrat', sans-serif;
+	transition: all 600ms ease;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+/* HEAD STYLES */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0;
+	width: 80%;
+	margin: 0 10%;
+	border-bottom: 2px solid black;
+}
+
+header a:hover {
+	text-decoration: underline;
+	text-shadow: -2px -2px 2px rgba(150, 150, 150, 1);
+
+}
+
+
+/* BODY STYLES */
+
+
+	/* START STYLES */
+
+.start {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 80%;
+	margin: 0 10%;
+}
+
+.start .start-text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 40px 15px;
+}
+
+.start .start-text h2 {
+	font-size: 47px;
+	line-height: 60px;
+	width: 125px;
+}
+
+.start .start-text p {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.start img {
+	width: 100%;
+	height: 390px;
+	object-fit: cover;
+}
+
+	/* ABOUT STYLES */
+
+.about {
+	margin: 100px 0;
+	padding: 100px 20%;
+	background: #f6f6f6;
+	text-align: center;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.about h2 {
+	font-size: 34px;
+	line-height: 42px;
+}
+
+.about div > p:first-child {padding-top: 20px;}
+.about div > p {padding-bottom: 30px;}
+.about div > p:last-child {padding-bottom: 0px;}
+
+	/* SKILLS STYLES */
+
+.skills,
+.sertif {
+	width: 80%;
+	margin: 0 10%;
+	text-align: center;
+}
+
+.skills p {padding: 70px 0;}
+
+.skills .skills-img {
+	display: flex;
+	justify-content: space-between;
+}
+
+.skills .skills-img .item {
+	display: flex;
+	flex-direction: column;
+}
+
+.skills .skills-img .item > i {
+	font-size: 90px;
+}
+
+.skills .skills-img .item > p {
+	padding: 30px 0;
+}
+
+	/* PROJECT STYLES */
+
+.proj {
+	text-align: center;
+	background: #f6f6f6;
+	padding: 10% 5% 5% 5%;
+}
+
+.proj .item {
+	margin: 50px 0;
+}
+
+.proj .item img,
+.sertif img {
+	width: 100%;
+	height: 520px;
+	object-fit: contain;
+}
+
+.proj .item:last-child {
+	margin: 0;
+}
+
+.proj .item p {
+	padding: 50px 0;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	text-decoration-line: underline;
+}
+
+	/* SERTIFICATES STYLES */
+
+
+.sertif {
+	margin: 100px 10%;
+	background: #f6f6f6;
+}
+
+.sertif h2 {padding: 50px 0;}
+
+.sertif img {width: auto;}
+
+.sertif div {
+	display: flex;
+	justify-content: center;
+}
+
+.sertif div img {
+	padding: 30px 30px;
+}
+
+	/* FOOTER STYLES */
+
+footer {
+	background: black;
+	color: white;
+	text-align: center;
+	padding: 30px;
+}
