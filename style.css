@@ -113,13 +113,14 @@ header a:hover {
 .skills .skills-img {
 	display: flex;
 	justify-content: space-between;
-	border: 1px solid black;
-	box-shadow: 2px 2px 2px black;
+
 }
 
 .skills .skills-img .item {
 	display: flex;
 	flex-direction: column;
+	border: 1px solid black;
+	box-shadow: 2px 2px 2px black;
 }
 
 .skills .skills-img .item > i {
