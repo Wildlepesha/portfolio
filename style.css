@@ -100,7 +100,7 @@ header a:hover {
 .about div > p {padding-bottom: 30px;}
 .about div > p:last-child {padding-bottom: 0px;}
 .about-links {
-         display: inline-block;
+         display: flex;
 	 width: 100%;
 }
 
