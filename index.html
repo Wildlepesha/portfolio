@@ -16,8 +16,8 @@
 
 	<section id="home" class="start">
 		<div class="start-text">
-			<div>
-			    <h2>Александр Разумейко</h2>
+			<div class="title_">
+			    <h2>Александр <br> Разумейко</h2>
 			    <p>Тестировщик<br>24 года, Москва</p>
 			</div>
 		    	<div>
@@ -29,25 +29,33 @@
 
 	<section id="about">
 		<section class="about">
-		    <h2>Обо мне</h2>
-		    <div>
+			<h2>Обо мне</h2>
+			<div>
 			<p>Привет, я Александр! <br> Мне интересна сфера it, технологии и все что с ними связано.</p>
 			<p>Изучаю WEB-разработку и параллельно работаю тестировщиком! </p>
 			<p>Готов участвовать в интересных проектах с клевыми людьми!</p>
-		    </div>
+			</div>
 		</section>
-		<section сlass="about-links">
-			<div class="item"><p>GIT</p></div>
-			<div class="item"><p>Headhunter</p></div>
+		<section class="about-links">
+			<script>
+				let git = document.querySelector(".git");
+				let hh = document.querySelector(".hh");
+				function open_link (link) {
+					window.open(link)
+				}
+			</script>
+			<div class="item git" onclick="open_link('https:\/\/github.com/Wildlepesha')"><i class="fab fa-github"></i><p>GIT</p></div>
+			<div class="item hh" onclick="open_link('https:\/\/domodedovo.hh.ru/resume/5323a1b2ff0d631c680039ed1f686177556a39')"><i class='fa fa-address-book'></i><p>Headhunter</p></div>
 		</section>
 	</section>
+	
 
 	<section id="skills" class="skills">
 		<h2>Что я умею</h2>
 		<br>
 		<div class="skills-img">
 			<div class="item"><i class="fab fa-python"></i><p>Python & django</p></div>
-			<div class="item"><i class="fab fa-github"></i><p>Git</p></div>
+			<div class="item"><i class='fab fa-node'></i><p>Node JS</p></div>
 			<div class="item"><i class="fab fa-js"></i><p>Java-script</p></div>
 			<div class="item"><i class="fas fa-database"></i><p>Sql databases</p></div>
 		</div>

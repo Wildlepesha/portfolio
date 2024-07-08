@@ -7,9 +7,10 @@
 	font-family: 'Montserrat', sans-serif;
 	transition: all 600ms ease;
 	box-sizing: border-box;
- scroll-behavior: smooth;
- scroll-padding-top: 20px;
-}
+ 	scroll-behavior: smooth;
+ 	scroll-padding-top: 20px;
+}
+
 
 a {
 	color: black;
@@ -47,9 +48,13 @@ header a:hover {
 	margin: 0 10%;
 }
 
+.title_ {
+	width: auto;
+}
+
 .start .start-text {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	margin: 40px 15px;
 }
@@ -57,7 +62,7 @@ header a:hover {
 .start .start-text div h2 {
 	font-size: 47px;
 	line-height: 60px;
-	width: 125px;
+	/* width: 125px; */
 }
 
 .start .start-text div {
@@ -80,8 +85,13 @@ header a:hover {
 
 	/* ABOUT STYLES */
 
+#about {
+	background: #f6f6f6;
+	text-align: center;
+}
+
 .about {
-	margin: 100px 0;
+	/* margin: 100px 0; */
 	padding: 100px 20%;
 	background: #f6f6f6;
 	text-align: center;
@@ -99,15 +109,31 @@ header a:hover {
 .about div > p:last-child {padding-bottom: 0px;}
 
 .about-links {
-         display: flex;
-	 width: 100%;
-justify-content: center;
-margin: 0 auto;
+    display: flex;
+	width: 80%;
+	justify-content: center;
+	margin: 0 auto;
+	/* padding-bottom: 100px; */
+
+}
+
+.about-links div > i:hover {
+	font-size: 90px;
+}
+
+.about-links div {
+	width: 150px;
+	height: 150px;
+	margin: 0 15px 70px 15px;
+	padding: 10px 0 0 0;
 }
 
 
-
 	/* SKILLS STYLES */
+
+.skills h2 {
+	margin: 70px 0 70px 0;
+}
 
 .skills,
 .sertif {
@@ -117,6 +143,7 @@ margin: 0 auto;
 }
 
 .skills p {padding: 70px 0;}
+.about-links div > p {padding: 20px 0;}
 
 .skills .skills-img {
 	display: flex;
@@ -129,12 +156,21 @@ margin: 0 auto;
 	flex-direction: column;
 }
 
-.skills .skills-img .item > i {
+.skills .skills-img .item > i,
+.about-links div > i {
 	font-size: 90px;
 }
 
-.skills .skills-img .item:hover {
-	box-shadow: 2px 2px 2px black;
+.skills .skills-img .item:hover, 
+.about-links div:hover {
+	-webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.skills-img .item {
+	width: 150px;
+	height: 150px;
 }
 
 
