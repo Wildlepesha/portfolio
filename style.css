@@ -82,7 +82,7 @@ header a:hover {
 
 	/* ABOUT STYLES */
 
-.about {
+.about, about-links {
 	margin: 100px 0;
 	padding: 100px 20%;
 	background: #f6f6f6;
@@ -99,6 +99,10 @@ header a:hover {
 .about div > p:first-child {padding-top: 20px;}
 .about div > p {padding-bottom: 30px;}
 .about div > p:last-child {padding-bottom: 0px;}
+.about-links {
+         display: inline-block;
+	 width: 100%;
+}
 
 	/* SKILLS STYLES */
 
