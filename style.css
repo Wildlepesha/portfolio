@@ -82,7 +82,7 @@ header a:hover {
 
 	/* ABOUT STYLES */
 
-.about, about-links {
+.about, .about-links {
 	margin: 100px 0;
 	padding: 100px 20%;
 	background: #f6f6f6;
