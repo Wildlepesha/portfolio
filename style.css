@@ -7,11 +7,8 @@
 	font-family: 'Montserrat', sans-serif;
 	transition: all 600ms ease;
 	box-sizing: border-box;
-}
-
-body {
-	scroll-behavior: smooth;
-}
+ scroll-behavior: smooth;
+}
 
 a {
 	color: black;
