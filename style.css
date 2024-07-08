@@ -56,13 +56,13 @@ header a:hover {
 	margin: 40px 15px;
 }
 
-.start .start-text h2 {
+.start .start-text div h2 {
 	font-size: 47px;
 	line-height: 60px;
 	width: 125px;
 }
 
-.start .start-text p {
+.start .start-text div {
 	font-size: 18px;
 	line-height: 22px;
 }
