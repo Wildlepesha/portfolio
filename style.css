@@ -201,7 +201,8 @@ header a:hover {
 	margin: 0;
 }
 
-.proj .item p {
+.proj .item p,
+.proj .item a {
 	padding: 50px 0;
 	font-size: 18px;
 	line-height: 22px;
