@@ -2,97 +2,142 @@
 <html>
 <head>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-	<link type="text/css" rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./styles/style.css">
 	<title>Портфолио</title>
 </head>
 <body>
-	<header>
-		<a href="#home">Главная</a>
-		<a href="#about">Обо мне</a>
-		<a href="#skills">Что я умею</a>
-		<a href="#projects">Проекты</a>
-		<a href="#sertificates">Обучение</a>
+	<header class="header">
+		<nav class="navigation-links">
+			<ul class="navigation-links__list">
+				<li class="navigation-links__item">
+					<a href="#home" class="item__link">
+						Главная
+					</a>
+				</li>
+				<li class="navigation-links__item">
+					<a href="#about" class="item__link">
+						Обо мне
+					</a>
+				</li>
+				<li class="navigation-links__item">
+					<a href="#skills" class="item__link">
+						Что я умею
+					</a>
+				</li>
+				<li class="navigation-links__item">
+					<a href="#projects" class="item__link">
+						Проекты
+					</a>
+				</li>
+				<li class="navigation-links__item">
+					<a href="#sertificates" class="item__link">
+						Обучение
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
-
-	<section id="home" class="start">
-		<div class="start-text">
-			<div class="title_">
-			    <h2>Александр <br> Разумейко</h2>
-			    <p>Тестировщик<br>24 года, Москва</p>
-			</div>
-		    	<div>
-			    <img src="img/my_photo.jpg" alt="photo">
-			</div>
-			
-		</div>
-	</section>
-
-	<section id="about">
-		<section class="about">
-			<h2>Обо мне</h2>
-			<div>
-			<p>Привет, я Александр! <br> Мне интересна сфера it, технологии и все что с ними связано.</p>
-			<p>Изучаю WEB-разработку и параллельно работаю тестировщиком! </p>
-			<p>Готов участвовать в интересных проектах с клевыми людьми!</p>
-			</div>
+	<main>
+		<section id="home" class="hero-section">
+				<p class="hero-section__text">
+					<span class="text__accent">Александр Разумейко</span>
+					Тестировщик 24 года, Москва
+				</p>
+				<div class="hero-section__photo">
+					<img src="img/my_photo.jpg" alt="Фото">
+				</div> 
 		</section>
-		<section class="about-links">
-			<script>
-				let git = document.querySelector(".git");
-				let hh = document.querySelector(".hh");
-				function open_link (link) {
-					window.open(link)
-				}
-			</script>
-			<div class="item git" onclick="open_link('https:\/\/github.com/Wildlepesha')"><i class="fab fa-github"></i><p>GIT</p></div>
-			<div class="item hh" onclick="open_link('https:\/\/domodedovo.hh.ru/resume/5323a1b2ff0d631c680039ed1f686177556a39')"><i class='fa fa-address-book'></i><p>Headhunter</p></div>
+		<section id="about" class="about">
+			<h2 class="about__title">
+				Обо мне
+			</h2>
+			<p class="about__text">
+				Привет, я Александр! Мне интересна сфера it, технологии и все что с ними связано.
+				Изучаю WEB-разработку и параллельно работаю тестировщиком!
+				Готов участвовать в интересных проектах с клевыми людьми!
+			</p>
+			<ul class="images-list about__links">
+				<li class="images-list__item">
+					<a href="" class="list_item-link">
+						<i class='fa fa-address-book'></i>
+						Headhunter
+					</a>
+				</li>
+				<li class="images-list__item">
+					<a href="" class="list_item-link">
+						<i class="fab fa-github"></i>
+						GIT
+					</a>
+				</li>
+			</ul>
 		</section>
-	</section>
-	
-
-	<section id="skills" class="skills">
-		<h2>Что я умею</h2>
-		<br>
-		<div class="skills-img">
-			<div class="item"><i class="fab fa-python"></i><p>Python & django</p></div>
-			<div class="item"><i class='fab fa-node'></i><p>Node JS</p></div>
-			<div class="item"><i class="fab fa-js"></i><p>Java-script</p></div>
-			<div class="item"><i class="fas fa-database"></i><p>Sql databases</p></div>
-		</div>
-		<p>И много еще...</p>
-	</section>
-
-	<section id="projects" class="proj">
-		<h2>Проекты фронт + бэк</h2>
-		<div class="item"><img src="./img/portfolio2.jpg" alt=""><p>Сайт с рецептами</p></div>
-		<div class="item"><img src="./img/portfolio3.jpg" alt=""><p>Сайт сокращенных ссылок</p></div>
-		<div class="item"><img src="./img/pass.jpg" alt=""><p>Password manager app</p></div>
-  <h2>Проекты фронт</h2>
-  <div class="item"><img src="./img/ono-tebe-nado.jpg" alt="Оно тебе надо"><a href="https://wildlepesha.github.io/ono-tebe-nado/">Оно тебе надо</a></div>
-   <div class="item"><img src="./img/list.jpg" alt="С чистого листа"><a href="https://wildlepesha.github.io/praktikum_1/">С чистого листа</a></div>
-	</section>
-  
-
-	<section id="sertificates" class="sertif">
-		<h2>Мое обучение</h2>
-		<div>
-			<img src="./img/diplom.png" alt="">
-		</div>
-		<div>
-			<img src="./img/sertif5.png" alt="">	
-		</div>
-		<div>
-			<img src="./img/sertif1.png" alt="">
-			<img src="./img/sertif2.png" alt="">
-		</div>
-		<div>
-			<img src="./img/sertif4.png" alt="">
-		</div>
-		<div>
-			<img src="./img/sber.png" alt="">
-		</div>
-	</section>
-
+		<section id="skills" class="skills">
+			<h2 class="skills__title">
+				Что я умею
+			</h2>
+			<ul class="images-list">
+				<li class="images-list__item">
+					<i class="fab fa-python"></i>
+					Python & django
+				</li>
+				<li class="images-list__item">
+					<i class='fab fa-node'></i>
+					Node JS
+				</li>
+				<li class="images-list__item">
+					<i class="fab fa-js"></i>
+					Java-script
+				</li>
+				<li class="images-list__item">
+					<i class="fas fa-database"></i>
+					Sql databases
+				</li>
+			</ul>
+		</section>
+		<section id="projects" class="projects">
+			<ul class="projects__list">
+				<li class="projects-item item-title">
+					Проекты фуллстэк
+				</li>
+				<li class="projects-item item-wrapper">
+					<img src="./img/portfolio2.jpg" alt="" class="item-image">
+					Сайт с рецептами
+				</li>
+				<li class="projects-item item-wrapper">
+					<img src="./img/portfolio3.jpg" alt="" class="item-image">
+					Сайт сокращенных ссылок
+				</li>
+				<li class="projects-item item-title">
+					Проекты фронт
+				</li>
+				<li class="projects-item item-wrapper">
+					<img src="./img/ono-tebe-nado.jpg" alt="Оно тебе надо" class="item-image">
+					<a class="item-image__link" href="https://wildlepesha.github.io/ono-tebe-nado/" target="_blank">
+						Оно тебе надо
+					</a>
+				</li>
+				<li class="projects-item item-wrapper">
+					<img src="./img/list.jpg" alt="С чистого листа" class="item-image">
+					<a class="item-image__link" href="https://wildlepesha.github.io/praktikum_1/" target="_blank">
+						С чистого листа
+					</a>
+				</li>
+		</ul>
+		</section>
+		<section id="sertificates" class="sertificates">
+			<ul class="projects__list">
+				<li class="projects-item item-wrapper">
+					<h2>Мое обучение</h2>
+				</li>
+				<li class="projects-item item-wrapper"><img src="./img/diplom.png" alt="" class="item-image"></li>
+				<li class="projects-item item-wrapper"><img src="./img/sertif5.png" alt="" class="item-image">	</li>
+				<li class="projects-item item-wrapper"><img src="./img/sertif1.png" alt="" class="item-image"></li>
+				<li class="projects-item item-wrapper"><img src="./img/sertif2.png" alt="" class="item-image"></li>
+				<li class="projects-item item-wrapper"><img src="./img/sertif4.png" alt="" class="item-image"></li>
+				<li class="projects-item item-wrapper"><img src="./img/sber.png" alt="" class="item-image"></li>
+			</ul>
+		</section>
+	</main>
 	<footer>
 		<h3>Made by Lepesha &copy;</h3>
 	</footer>
