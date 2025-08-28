@@ -137,6 +137,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	gap: 50px;
+	
 }
 
 .item-title {
@@ -155,10 +156,15 @@ img {
 
 .item-image {
 	margin-bottom: 20px;
+	object-fit: contain;
+	height: 100%;
+	width: 100%;
+	max-height: 700px;
 }
 
 .sertificates {
 	margin-top: 40px;
+	
 }
 
 footer {
